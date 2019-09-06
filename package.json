@@ -1,0 +1,23 @@
+{
+  "name": "json-seq",
+  "version": "0.0.1",
+  "description": "Tools for working with json-seq (RFC 7464)",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vampirical/json-seq.git"
+  },
+  "keywords": [
+    "json-seq",
+    "json",
+    "sequence",
+    "stream",
+    "rfc7464"
+  ],
+  "author": "Jeff Marion <jeff@marion.mx>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vampirical/json-seq/issues"
+  },
+  "homepage": "https://github.com/vampirical/json-seq#readme"
+}
