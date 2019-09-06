@@ -80,12 +80,14 @@ class ParseStream extends Transform {
         }
 
         const string = Buffer.concat(this.buffer).toString('utf8');
+        let data;
         try {
-          const data = JSON.parse(string);
-
-          this.push(data);
+          data = JSON.parse(string);
         } catch (err) {
           this.emit('invalid', string);
+        }
+        if (data !== undefined) {
+          this.push(data);
         }
 
         this.buffer = [];
