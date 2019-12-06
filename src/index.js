@@ -1,5 +1,5 @@
 const {Buffer} = require('buffer');
-const {Transform} = require('stream');
+const {Transform} = require('readable-stream');
 
 const CHAR_CODE_RECORD_SEPARATOR = 30;
 const CHAR_CODE_NEWLINE = 10;

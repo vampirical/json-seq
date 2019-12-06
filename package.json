@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/vampirical/json-seq/issues"
   },
-  "homepage": "https://github.com/vampirical/json-seq#readme"
+  "homepage": "https://github.com/vampirical/json-seq#readme",
+  "dependencies": {
+    "readable-stream": "3.4.0"
+  }
 }
