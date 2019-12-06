@@ -123,20 +123,20 @@ class StringifyStream extends Transform {
     };
     super(mergedOptions);
 
-    this.charCodeStart = mergedOptions.charCodeStart;
-    this.charCodeEnd = mergedOptions.charCodeEnd;
+    this.charStart = String.fromCharCode(mergedOptions.charCodeStart);
+    this.charEnd = String.fromCharCode(mergedOptions.charCodeEnd);
   }
 
   _transform(chunk, encoding, callback) {
     try {
       const string = JSON.stringify(chunk);
 
-      if (this.charCodeStart) {
-        this.push(this.charCodeStart);
+      if (this.charStart) {
+        this.push(this.charStart);
       }
       this.push(string);
-      if (this.charCodeEnd) {
-        this.push(this.charCodeEnd);
+      if (this.charEnd) {
+        this.push(this.charEnd);
       }
 
       callback();
