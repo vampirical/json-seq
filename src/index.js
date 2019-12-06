@@ -35,7 +35,7 @@ class ParseStream extends Transform {
    * @param options.charCodeStart Character code that marks the start of a record (defaults to RS)
    * @param options.charCodeEnd   Character code that marks the end of a record (default to newline)
    */
-  constructor(options) {
+  constructor(options = {}) {
     const mergedOptions = {
       charCodeStart: CHAR_CODE_RECORD_SEPARATOR,
       charCodeEnd: CHAR_CODE_NEWLINE,
@@ -114,7 +114,7 @@ class StringifyStream extends Transform {
    * @param options.charCodeStart Character code that marks the start of a record (defaults to RS)
    * @param options.charCodeEnd   Character code that marks the end of a record (default to newline)
    */
-  constructor(options) {
+  constructor(options = {}) {
     const mergedOptions = {
       charCodeStart: CHAR_CODE_RECORD_SEPARATOR,
       charCodeEnd: CHAR_CODE_NEWLINE,
