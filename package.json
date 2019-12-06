@@ -1,6 +1,6 @@
 {
   "name": "json-seq",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Tools for working with json-seq (RFC 7464)",
   "main": "src/index.js",
   "repository": {
