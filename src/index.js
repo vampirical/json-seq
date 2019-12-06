@@ -118,7 +118,7 @@ class StringifyStream extends Transform {
     const mergedOptions = {
       charCodeStart: CHAR_CODE_RECORD_SEPARATOR,
       charCodeEnd: CHAR_CODE_NEWLINE,
-      writeableObjectMode: true,
+      writableObjectMode: true,
       ...options,
     };
     super(mergedOptions);
