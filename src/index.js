@@ -37,6 +37,7 @@ class ParseStream extends Transform {
    */
   constructor(options = {}) {
     const mergedOptions = {
+      autoDestroy: false,
       charCodeStart: CHAR_CODE_RECORD_SEPARATOR,
       charCodeEnd: CHAR_CODE_NEWLINE,
       readableObjectMode: true,
@@ -116,6 +117,7 @@ class StringifyStream extends Transform {
    */
   constructor(options = {}) {
     const mergedOptions = {
+      autoDestroy: false,
       charCodeStart: CHAR_CODE_RECORD_SEPARATOR,
       charCodeEnd: CHAR_CODE_NEWLINE,
       writableObjectMode: true,
